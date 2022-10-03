@@ -1,0 +1,379 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@1,300&display=swap');
+
+body{
+    font-family: 'Raleway', sans-serif;
+    background-color: rgb(173, 193, 212);
+}
+:root{
+    --background: linear-gradient(135deg,#667eea7e 0%, #667eea7e 100%);
+    --color-primary:#667eea;
+    --color-secondary:#667eea;
+    --boton-padding:20px 40px;
+}
+
+.container{
+    width: 90%;
+    margin: 0 auto;
+    overflow: hidden;
+    padding: 80px;
+    max-width: 1200px;
+
+}
+
+.subtitle{
+    color:var(--color-primary);
+    font-size: 2.5rem;
+    margin-bottom: 35px;
+}
+
+.bloque--hero{
+    height: 100vh;
+    background-image: var(--background), url('assets/altumcode.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center;
+    position: relative;
+    
+}
+
+.bloque--hero .container{
+    padding: 0;
+    
+}
+
+.nav{
+    display:flex;
+    justify-content: flex-end;
+    height: 70px;
+    align-items: center;
+    font-weight: 700;
+    border: 1px solid #fff;
+}
+
+.nav--footer{
+    font-weight: 300;
+    justify-content: flex-start;
+}
+
+.nav__items{
+    color: #fff;
+    text-decoration: none;
+    margin-right: 20px;
+    padding: 10px 15px;
+    font-weight: inherit;
+}
+
+.nav__items--footer{
+    padding: 10px;
+}
+
+.bloque--hero__container{
+    display: flex;
+    height: calc(100vh - 70px);
+    align-items: center;
+    color: #fff;
+    
+}
+.hero__texts{
+    width: 80%;
+    margin-bottom: 50px;
+}
+
+.hero__title{
+    font-size: 3.2rem;
+    font-weight: 300;
+    margin: 15px 0;
+}
+
+.hero__subtitle{
+    font-size: 2rem;
+    font-weight: 300;
+    margin: 15px 0;
+}
+.hero__wave{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 100px;
+}
+
+/* Section Sobre mi*/
+.presentation__container{
+    padding-top: 0;
+    text-align: center;
+}
+
+.presentation__picture{
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    margin-bottom: 10px;
+    object-fit: cover;
+    object-position: top;
+}
+
+.presentation__me{
+    width:80%;
+    margin: 0 auto;
+}
+
+
+/*Hobbies*/
+.hobbies{
+    background: f2f2f2;
+    background-color:rgb(46, 49, 47);
+}
+.hobbies__grid{
+    display: grid;
+    height: 550px;
+    grid-template-areas: 
+    "videojuego1 videojuego2 baloncesto"
+    "billar pingpong futbolin";
+    gap: 10px;
+}
+.hobbies__item{
+    position: relative;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
+
+.hobbies__img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    cursor: pointer;
+}
+
+.hobbies__item:nth-of-type(1){
+   grid-area: videojuego1;
+}
+.hobbies__item:nth-of-type(2){
+    grid-area: videojuego2;
+ }
+ .hobbies__item:nth-of-type(3){
+    grid-area: baloncesto;
+ }
+ .hobbies__item:nth-of-type(4){
+    grid-area: billar;
+ }
+ .hobbies__item:nth-of-type(5){
+    grid-area: pingpong;
+ }
+ .hobbies__item:nth-of-type(6){
+    grid-area: futbolin;
+ }
+
+ .hobbies__hover{
+     position:absolute;
+     background: #dc143c8c ;
+     top:0;
+     left: 0;
+     width: 100%;
+     height: 100%;
+     color: #fff;
+     text-align: center;
+     display: flex;
+     flex-direction: column;
+     justify-content: center;
+     transform: translateX(100%);
+     cursor: pointer;
+     transition: transform .3s ease-in-out;
+ }
+.hobbies__item:hover .hobbies__hover{
+    transform: translateX(0%);
+}
+ .hobbies__icon{
+     margin-top: 10px;
+     font-size: 30px;
+ }
+/*Mis Proyectos*/
+
+ .projects{
+    background: f2f2f2;
+}
+.contaniner__pro{
+    width: 90%;
+    margin: 0 auto;
+    overflow: hidden;
+    padding: 80px;
+    max-width: 1200px;
+
+}
+/*.projects__grid{
+    display: grid;
+    height: 550px;
+    grid-template-areas: 
+    "underConstruction1 underConstruction1 underConstruction1";
+    gap: 10px;
+}*/
+.projects{
+    position:relative;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
+
+.projects__img{
+    width:100%;
+    height: 100%;
+    object-fit: cover;
+    cursor: pointer;
+}
+.projects__item:nth-of-type(1){
+    grid-area: underConstruction1;
+ }
+ /*.projects__item:nth-of-type(2){
+     grid-area: underConstruction1;
+  }
+  .projects__item:nth-of-type(3){
+     grid-area: underConstruction1;
+  }
+  .projects__item:nth-of-type(4){
+     grid-area: underConstruction1;
+  }
+  .projects__item:nth-of-type(5){
+     grid-area: underConstruction1;
+  }
+  .projects__item:nth-of-type(6){
+     grid-area: underConstruction1;
+  }*/
+
+  .projects__icon{
+    margin-top: 10px;
+    font-size: 30px;
+ }
+
+ /*FOOTER*/
+ .footer{
+     background: var(--color-primary);
+ }
+
+ .footer__grid{
+     display: grid;
+     grid-template-columns: 3fr 2fr;
+     gap: 20px;
+     align-items: center;
+ }
+
+ .footer__title{
+     font-weight: 400;
+     color:#fff;
+     font-size: 2rem;
+     margin-bottom: 30px;
+     text-align: center;
+ }
+
+ .footer__icons{
+     display: flex;
+     justify-content: space-evenly;
+ }
+
+ .footer__container-icons{
+     display: inline-block;
+     width: 60px;
+     height: 60px;
+     color: #fff;
+     text-align: center;
+     border: 1px solid #fff;
+     border-radius: 50%;
+ }
+
+ .footer__icon{
+     color: inherit;
+     font-size: 30px;
+     text-decoration: none;
+     line-height: 60px;
+ }
+
+ .fa-brands.footer__icon{
+     line-height: 60px;
+
+ }
+
+ @media screen and (max-width: 800px) {
+     :root{
+         --bottom-padding: 18px 40px;
+     }
+     .nav{
+         justify-content: space-around;
+     }
+
+     .nav__items{
+         font-weight: 400;
+         border-bottom: 1px solid #fff;
+     }
+
+     .nav__items--footer{
+         border: none;
+     }
+
+     .hero__texts{
+         width: 100%;
+         margin-bottom: 80px;
+     }
+
+     .hero__title{
+         font-size: 2.5rem;
+     }
+
+     .hero__subtitle{
+         font-size: 1.5rem;
+     }
+
+     /*Sobre mi*/
+     .presentation__me{
+         width: 100%;
+     }
+     /*Mis Proyectos*/
+     
+     }
+     /*Footer*/
+     .footer__grid{
+         grid-template-columns: 1fr;
+     }
+
+     .footer__contact{
+         grid-row: 1/2;
+     }
+ 
+
+/*
+ @media screen and (max-widht: 500px) {
+     :root{
+         --bottom-padding:18px 35 px;
+     }
+     .subtitle{
+         font-size: 2rem;
+         margin-bottom: 20px;
+     }
+     .nav{
+         flex-wrap: wrap;
+         justify-content: space-evenly;
+         margin-top: 10px;
+     }
+     
+     .nav__items{
+         padding: 0 10 px;
+         border: 0;
+     }
+
+     .hero__texts{
+         text-align: center;
+         margin-bottom: 100px;
+     }
+
+     .hero__title{
+         font-size: 2rem;
+     }*/
+     /*About*/
+
+     /*.presentation__picture{
+         width: 120px;
+         height: 120px;
+     }
+
+
+ }*/
