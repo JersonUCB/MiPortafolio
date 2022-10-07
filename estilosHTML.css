@@ -1,0 +1,20 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing:border-box;
+  font-family: sans-serif;
+}
+body{
+  background: #C7B7A1;
+  font-family: 'Raleway', sans-serif;
+}
+tr:hover{
+  background-color: #0F758C;
+}
+  h1{
+  align-items: center;
+  background-color: rgb(247, 84, 35);
+  color: #D9C5B4;
+  margin-top: 30px;
+  margin-block-end: 10px;
+}

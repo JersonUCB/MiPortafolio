@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CSS Document</title>
+  <link rel="stylesheet" href="estilosCSS.css">
+</head>
+<body>
+  <a href="miManual.html"><img src="img/back.png" width="100" height="80" alt="back"></a>
+  <center>
+    <img src="img/css3.png" alt="html" width="400" height="350">
+    <h2>Colores en CSS</h2>
+    </center>
+  <div id="main-container"></div>
+      <table border="15">
+        <thead>
+          <tr>
+              <th>Model</th>
+              <th>Description</th>
+              <th>Sintax</th>
+          </tr>
+        </thead>
+
+        <tr>
+            <td>Usando nombres</td>
+            <td>Podemos especificar un color usando un nombre predefinido</td>
+            <td>color: red;</td>
+        </tr>
+        <tr>
+          <td>Usando el modelo RGB</td>
+          <td>Podemos  establecer el valor de  un color mezclando diferentes intensidades de los tres colores primarios (0 es transparente, 1 no transparente).</td>
+          <td> rgb(red, green, blue)</td>
+        </tr>
+        <tr>
+          <tr>
+            <td>Usando el valor RGB hexadecimal</td>
+            <td>Conlleva un # por delante seguido de 6 digitos</td>
+            <td> #c0c0c0 /*silver*/</td>
+          </tr>
+          <tr>
+          <td>Usando el modelo HSL</td>
+          <td>Utilizamos conceptos mas claros hsl(hue, saturation, lightness)</td>
+          <td> hsl(0,  100%,50%)/* red */   </td>
+        </tr>
+      </table>
+      <br>
+      <center>
+        <h2>Selectores CSS</h2>
+      </center>
+      <div id="main-container"></div>
+          <table border="15">
+            <thead>
+              <tr>
+                  <th>Tipo Selector</th>
+                  <th>Description</th>
+                  <th>Ejemplo</th>
+              </tr>
+            </thead>
+    
+            <tr>
+                <td>Selector Universal</td>
+                <td>Permiten seleccionar elementos del documento a los que queremos aplicar estilos</td>
+                <td>*{ color: green; } </td>
+            </tr>
+            <tr>
+              <td>SELECTORES DE TIPO (p)</td>
+              <td>Permite seleccionar elementos usando el nombre del elemento</td>
+              <td> p{ color: red;} </td>
+            </tr>
+            <tr>
+              <td>SELECTOR DE CLASE (.foo)</td>
+              <td>Permite seleccionar elementos en función de los valores del atributo class de los elementos.  Para que los elementos sean seleccionados, su atributo class debe incluir un valor  que coincida con el valor del selector</td>
+              <td> p class=”foo bar”> ¡HOLA MUNDO! p class=”foo baz”> ¡ADIÓS MUNDO! p</td>
+            </tr>
+            <tr>
+              <td>SELECTORES DE ID (#foo)</td>
+              <td>Permite seleccionar un elemento en función del valor del atributo ID del elemento. Para que el elemento sea seleccionado, su atributo id debe coincidir exactamente con el valor dado en el selector.</td>
+              <td> p id=”foo”> ¡HOLA MUNDO! #foo{color: blue;}</td>
+            </tr>
+
+            <tr>
+              <td>SELECTORES DE ATRIBUTO (a[foo])</td>
+              <td>Permite seleccionar elementos en función de la presencia o del valor de un determinado atributo. </td>
+              <td> a[title]{color: blue;}</td>
+            </tr>
+            
+          </table>
+      <a href="miManual.html"><img src="img/back.png" width="100" height="80" alt="back"></a>
+</body>
+</html>
